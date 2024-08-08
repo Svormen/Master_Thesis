@@ -1,0 +1,16 @@
+# Návod na spustenie projektu (vizualizácie letových dát pre prilbový displej) v aplikácii Unity:
+
+## Obsah:
+1. HMD (hlavný súbor projektu)
+2. main.c (pre získanie dát z leteckého simulátora a následné posielanie do aplikácie Unity)
+
+## Postup:
+1. Na začiatok je treba stiahnúť plugin XplaneConnect z internetu. (Stiahnete tu: https://github.com/nasa/XPlaneConnect/releases)
+2. Potom treba priečinok XPlaneConnect, ktorý sa nachádza v: \XPlaneConnect-1.2.1.zip\XPlaneConnect-1.2.1\xpcPlugin
+   dať do priečinka v leteckom simulátore X-Plane 11. (Cesta k plugins: ..\X-Plane 11\Resources\plugins)
+3. Následne do priečinka monitorExample nahradte súbor main.c, ktorý sa nachádza na DVD v priečinku \src.
+   Cesta k monitorExample je: \XPlaneConnect-1.2.1.zip\XPlaneConnect-1.2.1\C\monitorExample.
+4. Zapnutím súbora main.c v aplikácii Visual Studio spustíte získavanie dát z leteckého simulátora Xplane, ktoré sa posielajú do aplikácie Unity. Pre správne získavanie dát je treba aby bol letecký simulátor zapnutý, inač sa nebudú získavať žiadné dáta.
+5. Projekt HMD, ktorý je v prečinku \src otvorte v aplikácii Unity.
+6. Zapojte virtuálnu realitu do počítača a nainštalujte si SteamVR v aplikácii Steam.
+7. Projekt HMD môžete otvoriť v Unity a spustiť (pri spustení sa automaticky zapne SteamVR).
